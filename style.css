@@ -7,13 +7,36 @@ body {
   margin-top: 5%;
 }
 
+.parent {
+  width: 50%;
+  border-radius: 7px;
+  margin: 0 auto;
+}
+
 .top {
   background-color: white;
-  width: 50%;
-  margin: auto;
-  border-radius: 7px;
+  padding: 10px 30px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.left {
   padding-left: 20px;
-  padding-right: 20px;
+  flex: 1;
+  background-color: #008080;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.right {
+  color: white;
+  padding-left: 30px;
+  flex: 1;
+  background-color: #469594;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 h1 {
@@ -27,31 +50,29 @@ span {
 }
 
 p {
-  font-weight: 500;
-  line-height: 30px;
+  line-height: 20px;
 }
-.bottom {
-  display: flex;
-  background-color: turquoise;
-  margin-left: -10px;
-  margin-right: -10px;
-}
+
 h2 {
   color: white;
   margin-top: 10px;
 }
+
 h3 {
   margin: 10px;
   font-size: x-large;
 }
+
 .dollar {
   font-weight: bolder;
   color: white;
   font-size: xx-large;
 }
+
 .Ms {
   color: white;
 }
+
 .btn {
   margin-top: 10px;
   width: 70%;
@@ -62,15 +83,12 @@ h3 {
   border: yellowgreen;
   margin-left: 20px;
 }
-.bottom {
-  padding-top: 30px;
-  margin-bottom: -10px;
-  border-radius: 6px;
-}
-.left {
-  padding-left: 20px;
-}
-.right {
-  color: white;
-  padding-left: 30px;
+
+@media screen and (max-width: 550px) {
+  .bottom {
+    flex-direction: column;
+  }
+  .parent {
+    width: 70%;
+  }
 }
